@@ -291,7 +291,7 @@ public:
         nDefaultPort = 19444;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1653264662, 0, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1653264662, 1, 0x207fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x5dcf78ec70caf7aad978947273ed93c1a541f6b1d5fc1d979d689a5a7d09660e"));
         assert(genesis.hashMerkleRoot == uint256S("0x9bdb4634ed511019088705be525ff40882af78529728b264dc7aaf628d7367d6"));
@@ -315,7 +315,7 @@ public:
             0
         };
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,66);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
         base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,58);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239);
